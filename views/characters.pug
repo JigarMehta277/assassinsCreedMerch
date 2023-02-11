@@ -1,0 +1,23 @@
+extends layout 
+block main-content 
+  .characterHeroText 
+    h2#h2 Assassins Creed Famous Characters
+  .charactersInformation 
+    each data in characters
+      .famousAssassins 
+        img(src=data.path alt="AssassinImg" height="300px" width="400px" id="assassinImg")
+        p#nameP #{data.characterName}
+        p#infoP #{data.characterInfo} 
+
+
+        //-
+          Citation of character information
+          https://assassinscreed.fandom.com/wiki/Haytham_Kenway
+          https://assassinscreed.fandom.com/wiki/Ezio_Auditore_da_Firenze
+          https://hero.fandom.com/wiki/Eivor_Varinsdottir#:~:text=Eivor%20Varinsdottir%2C%20also%20known%20as,during%20the%20late%209th%20century.
+
+          Images citation
+          https://www.quora.com/Why-did-Haytham-Kenway-try-to-kill-his-own-son-Connor-towards-the-end-of-Assassins-Creed-III
+          https://soulcalibur.fandom.com/wiki/Ezio_Auditore_da_Firenze
+          https://www.pinterest.ca/pin/falcon-viking-assassins-creed-valhalla-eivor-varinsdottir-2k-wallpaper-hdwallpaper-desktop--640918590732301405/
+          

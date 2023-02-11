@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@800&family=Inter&family=PT+Sans:wght@700&family=Pacifico&family=Pangolin&family=Poppins:wght@500;600;700&family=Potta+One&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: 400 20px "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  box-shadow: 5px 10px 8px 10px #888888;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navigation {
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  font-size: 1.2em;
+  color: #87CEEB;
+  margin-top: 20px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 1.708em;
+}
+
+.navigation ul {
+  padding: 0%;
+  margin-left: 1.5em;
+
+}
+
+.navigation a:hover {
+  background-color: #FBC252;
+  border-radius: 5px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+#allAssassinsImg {
+  width: 100%;
+  height: 500px;
+}
+
+.assassinsContent {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#h1 {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  color: black;
+}
+
+#intro {
+  margin-top: 70px;
+  font-family: "Potta One", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  color: black;
+}
+
+#info {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'PT Serif', sans-serif;
+  margin-top: 80px;
+}
+
+.gameInfo {
+  display: flex;
+}
+
+#acLogo {
+  border-radius: 50%;
+}
+
+.div2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.maindiv1 {
+  flex-basis: 50%;
+}
+
+
+/*Character page CSS*/
+
+.famousAssassins {
+  display: flex;
+  column-gap: 10px;
+  padding-top: 20px;
+}
+
+.charactersInformation {
+  background-color: black;
+  color: white;
+}
+
+#nameP {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+#infoP {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+#assassinImg {
+  box-shadow: 5px 5px 3px #aaaaaa;
+}
+
+#h2 {
+  align-items: center;
+  font-family: "Potta One", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin: 0px;
+  padding: 20px;
+}
+
+/*Buy Merch page css*/
+
+#buyNow {
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 3px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.merchandiseContainer {
+  display: flex;
+  column-gap: 1em;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.merchandiseItem {
+  background-color: gray;
+  padding: 15px;
+  box-shadow: 3px 5px 4px 5px #888888;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+#h3 {
+  align-items: center;
+  font-family: "Potta One", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  color: black;
+}
+
+.mainText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 50px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*Contact us css*/
+
+.contactUsInfo {
+  align-items: center;
+  font-family: "Potta One", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+}
+
+.contactUs {
+  padding: 100px;
+  background-image: url("../images/contactUs.jpg");
+}

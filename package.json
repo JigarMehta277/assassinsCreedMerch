@@ -1,0 +1,27 @@
+{
+  "name": "assassinscreedmerch",
+  "version": "1.0.0",
+  "description": "application for selling assassin's creed merchandise",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JigarMehta277/assassinsCreedMerch.git"
+  },
+  "author": "Jigar Mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JigarMehta277/assassinsCreedMerch/issues"
+  },
+  "homepage": "https://github.com/JigarMehta277/assassinsCreedMerch#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.0.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,22 @@
+extends layout 
+block main-content
+  h3#h3 Assassin's Creed Merchandise
+  p.mainText We are exclusive sellers of Assassins creed merchandise, we always update our collection, you can find wide variety of assassins creed products.
+  p.mainText We also sell limited editions of assassins creed products, which you will not find anywhere else!
+      .merchandiseContainer
+        each data in merch 
+          .merchandiseItem 
+            img(src=data.path alt="merchImg" height="200px" width="200px")
+            p #{data.name} 
+            p Game: #{data.game}
+            p Price: #{data.price}
+            p Release Year: #{data.releaseYear}
+            a(href="#" id="buyNow") Buy Now 
+
+            //-
+              Citation of images
+              https://www.wish.com/product/bayek-aya-assassins-creed-origins-action-toy-figures-pvc-model-collection-for-girls-kids-lover-children-best-birthday-gift-5a9eab952293187c88805567?hide_login_modal=true
+              https://www.amazon.in/McFarlane-Assassins-Connor-Action-Figure/dp/B00BOZAD3O
+              https://www.ebay.ca/sch/i.html?_nkw=assassins+creed+4+black+flag+figure&Brand=&_dcat=261068
+              https://www.google.com/search?q=assassin%27s+creed+t+shirt&rlz=1C1CHBF_enCA1040CA1040&sxsrf=AJOqlzVqI3aHm5GHk3R4xOigk11jh-FwFA:1676079524546&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj_wLPlqoz9AhWGFlkFHWwIDiEQ_AUoAnoECAEQBA&biw=1536&bih=754&dpr=1.25
+              

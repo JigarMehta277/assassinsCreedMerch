@@ -1,0 +1,30 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title}
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/style/style.css")
+      link(rel="icon", type="image/x-icon", href="/images/favicon.png")
+  body
+    header#header
+      a(href="/" id="logo") 
+        img(src='./images/logo.png' alt='logo' height='120px' width='120px')
+      nav.navigation 
+        ul
+          li
+            a(href="/buyMerch") Buy Merch
+          li 
+            a(href="/characters") Characters 
+          li
+            a(href="/contactUs") Contact us
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Jigar Mehta, 2023.
+
+      //-
+        Citation of images
+        https://twitter.com/assassinscreed/status/1520795187638935553
+        https://wallhere.com/en/wallpaper/640793
