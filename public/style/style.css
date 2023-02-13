@@ -24,6 +24,10 @@ html {
   overflow: hidden;
 }
 
+#menuToggle {
+  display: none;
+}
+
 .navigation {
   font-family: 'Poppins', sans-serif;
   font-weight: medium;
@@ -165,15 +169,18 @@ html {
   display: flex;
   column-gap: 1em;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .merchandiseItem {
+  font-size: 20px;
   background-color: gray;
   padding: 15px;
   box-shadow: 3px 5px 4px 5px #888888;
   text-align: center;
   margin-top: 1.5em;
+  height: 24em;
+  width: 15em;
 }
 
 #h3 {
@@ -207,4 +214,114 @@ html {
 .contactUs {
   padding: 100px;
   background-image: url("../images/contactUs.jpg");
+}
+
+/*Media Queries*/
+
+/*Media Query for Tablet View*/
+
+@media screen and (max-width: 760px) {
+
+  .gameInfo {
+    display: block;
+  }
+
+  #acLogo {
+    float: left;
+    margin: 10px;
+  }
+
+  #assassinImg {
+    float: left;
+    height: 150px;
+    width: 200px;
+    margin: 2em;
+  }
+
+  .famousAssassins {
+    display: block;
+    font-size: smaller;
+  }
+}
+
+/*Media Query for mobile view*/
+
+@media screen and (max-width: 320px) {
+  #assassinImg {
+    height: 170px;
+    width: 220px;
+  }
+
+  #h2 {
+    font-size: 1.3em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  #headerLogo {
+    height: 70px;
+    width: 70px;
+    align-items: start;
+  }
+
+  #nameP {
+    text-align: center;
+  }
+
+  .show-phone {
+    display: block !important;
+    background-color: #dedede;
+    position: absolute;
+    width: 60%;
+    font-size: 14px;
+    left: 3.5;
+  }
+
+  #menuToggle {
+    display: block;
+    margin-top: 22px;
+  }
+
+  #header {
+    justify-content: space-evenly;
+  }
+
+  .gameInfo {
+    display: block;
+  }
+
+  #h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #intro {
+    font-size: 1em;
+    margin-top: 2.5em;
+  }
+
+  #info {
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  #main h3 {
+    font-size: 20px;
+  }
+
+  .mainText {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .contactUs {
+    padding: 50px;
+  }
+
+  .contactUsInfo {
+    font-size: 0.75em;
+  }
+
 }
