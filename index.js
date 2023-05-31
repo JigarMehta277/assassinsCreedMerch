@@ -10,7 +10,7 @@ const client = new MongoClient(dbUrl);
 
 //Set up Express app and port number
 const app = express();
-const port = process.env.PORT || 8888;
+const port = process.env.PORT || 8889;
 
 //Set up static file path
 app.use(express.static(path.join(__dirname, "public")));
